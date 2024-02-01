@@ -4,7 +4,6 @@ import time
 
 bot = telebot.TeleBot('TOKEN')
 
-
 @bot.message_handler(commands=['start'])
 def main(message):
     bot.send_message(message.chat.id, f'ID чата: {message.chat.id}')
